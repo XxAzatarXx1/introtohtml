@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Fitness Form</h1>
+    <form action="/process.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name here">
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone #">
+        <br><br>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="password" placeholder="Your password">
+        <br><br>
+
+        <label for="cpass">Confirm Password</label>
+        <input type="password" id="cpass" name="confirmpassword" placeholder="Confirm your password">
+        <br><br>
+
+        <p>Choose your gender</p>
+        
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="gender">Male</label>
+       
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="gender">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="gender">Other</label>
+        <br><br>
+
+        <p>Choose your hobby</p>
+        
+        <input type="checkbox" name="gaming" id="gaming" value="gaming">
+        <label for="gaming">Gaming</label>
+
+
+        <input type="checkbox" name="coding" id="coding" value="coding">
+        <label for="coding">Coding</label>
+
+
+        <input type="checkbox" name="hangingoutwithmyboyfriend" id="hangingoutwithmyboyfriend"
+            value="hangingoutwithmyboyfriend">
+        <label for="hangingoutwithmyboyfriend">Hanging out with my boyfriend</label>
+        <br><br>
+
+        <label for="city">Choose a city:</label>
+        <select name="city" id="city">
+            <option value="new-york">New York</option>
+            <option value="seattle">Seattle</option>
+            <option value="los-angeles">Los Angeles</option>
+        </select>
+
+        <br><br>
+        <label for="message">Your Message:</label><br>
+
+        <textarea name="description" rows="7" cols="44" id="description"></textarea>
+        <br><br>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
